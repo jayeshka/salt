@@ -514,7 +514,7 @@ def create_ca(ca_name,
     _write_cert_to_database(ca_name, ca)
 
     ret = ('Created Private Key: "{0}/{1}/{2}_ca_cert.key." ').format(
-        ca_name, cert_base_path(), ca_name)
+        cert_base_path(), ca_name, ca_name)
     ret += ('Created CA "{0}": "{1}/{2}/{3}_ca_cert.crt."').format(
         ca_name, cert_base_path(), ca_name, ca_name)
 
